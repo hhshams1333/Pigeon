@@ -1,0 +1,26 @@
+{
+  "name": "pigeon",
+  "version": "0.1.0",
+  "description": "Microservice For Handling A Kafka Cluster Events",
+  "main": "index.ts",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhshams1333/Pigeon.git"
+  },
+  "keywords": [
+    "Microservice",
+    "Kafka",
+    "nodejs",
+    "kafkajs",
+    "grpc"
+  ],
+  "author": "Hamidreza Shams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hhshams1333/Pigeon/issues"
+  },
+  "homepage": "https://github.com/hhshams1333/Pigeon#readme"
+}
