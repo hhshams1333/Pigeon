@@ -22,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/hhshams1333/Pigeon/issues"
   },
-  "homepage": "https://github.com/hhshams1333/Pigeon#readme"
+  "homepage": "https://github.com/hhshams1333/Pigeon#readme",
+  "dependencies": {
+    "config": "^3.3.11",
+    "log4js": "^6.9.1"
+  },
+  "devDependencies": {
+    "@types/config": "^3.3.4",
+    "@types/node": "^20.14.2",
+    "typescript": "^5.4.5"
+  }
 }
