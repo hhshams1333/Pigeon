@@ -1,0 +1,4 @@
+{
+    "KAFKA_BROKERS": ["kafka1:29092", "kafka2:29095", "kafka3:29098"]
+
+}
