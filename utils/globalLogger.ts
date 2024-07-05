@@ -1,5 +1,6 @@
-import * as log4js from "log4js";
+import * as log4js from 'log4js';
 import * as config from "config";
+import SafeRabbitMQAppender from "./safeRabbitMqLogger";
 
 // Determine if the environment is local or server
 const isLocal = process.env.NODE_ENV === "local";
@@ -17,7 +18,7 @@ const appenders: any = {
   },
 };
 
-
+// If rabbitmq isn't install on your system just set the NODE_ENV to local
 if (!isLocal) {
   appenders.safeMq = {
     type: { configure: (config: any) => new SafeRabbitMQAppender(config) },
@@ -32,8 +33,6 @@ log4js.configure({
     mq: { appenders: isLocal ? ["console"] : ["safeMq"], level: "debug" },
   },
 });
-
-
 
 
 // Export logger instance

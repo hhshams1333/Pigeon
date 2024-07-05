@@ -1,4 +1,5 @@
 // Custom RabbitMQ appender for log4js with Error handler
+// This way if the RabbitMq service is down , Pigeon service will be up and ready !! 
 class SafeRabbitMQAppender {
     private rabbitMQAppender: any;
   
@@ -19,4 +20,4 @@ class SafeRabbitMQAppender {
     }
   }
 
-module.exports = SafeRabbitMQAppender
+export default SafeRabbitMQAppender
