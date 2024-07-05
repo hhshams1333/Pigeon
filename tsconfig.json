@@ -17,7 +17,7 @@
     // "experimentalDecorators": true,                   /* Enable experimental support for legacy experimental decorators. */
     // "emitDecoratorMetadata": true,                    /* Emit design-type metadata for decorated declarations in source files. */
     // "jsxFactory": "",                                 /* Specify the JSX factory function used when targeting React JSX emit, e.g. 'React.createElement' or 'h'. */
-    // "jsxFragmentFactory": "",                         /* Specify the JSX Fragment reference used for fragments when targeting React JSX emit e.g. 'React.Fragment' or 'Fragment'. */
+    // "jsxFragmentFactory": "",                         /* Specify the JSX Fragment reference used for fragments when targeting React JSX emit e.g. 'React.Fragment'. */
     // "jsxImportSource": "",                            /* Specify module specifier used to import the JSX factory functions when using 'jsx: react-jsx*'. */
     // "reactNamespace": "",                             /* Specify the object invoked for 'createElement'. This only applies when targeting 'react' JSX emit. */
     // "noLib": true,                                    /* Disable including any library files, including the default lib.d.ts. */
@@ -27,9 +27,13 @@
     /* Modules */
     "module": "NodeNext",                               /* Specify what module code is generated. */
     // "rootDir": "./",                                  /* Specify the root folder within your source files. */
-    "moduleResolution": "NodeNext",                     /* Specify how TypeScript looks up a file from a given module specifier. */
-    "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
-    // "paths": {},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
+    // "moduleResolution": "",                     /* Specify how TypeScript looks up a file from a given module specifier. */
+    "baseUrl": "./",                                    /* Specify the base directory to resolve non-relative module names. */
+    "paths": {                                          /* Specify a set of entries that re-map imports to additional lookup locations. */
+      "@app/*": ["src/app/*"],
+      "@utils/*": ["src/utils/*"],
+      "log4js": ["node_modules/log4js"] 
+    },
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */
     // "types": [],                                      /* Specify type package names to be included without being referenced in a source file. */
@@ -104,12 +108,7 @@
 
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true  ,
-    "paths": {
-      "@app/*": ["src/app/*"],
-      "@utils/*": ["src/utils/*"],
-      "log4js": ["node_modules/log4js"] // تعریف مسیر برای log4js
-    }            
+    "skipLibCheck": true  
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
