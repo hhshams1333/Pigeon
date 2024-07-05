@@ -1,7 +1,7 @@
 {
-  "name": "pigeon",
+  "name": "kafka-pigeon",
   "version": "0.1.0",
-  "description": "Microservice For Handling A Kafka Cluster Events",
+  "description": "KafkaJs Wrapper to easily create consumer",
   "main": "index.ts",
   "scripts": {
     "test": "npm run test"
